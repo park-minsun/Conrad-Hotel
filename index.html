@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘래드 서울</title>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+<!-- scroll -->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<!-- google font & icon -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!--GSAP & ScrollToPlugin-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+<!--Swiper-->
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+<!--ScrollMagic-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<!--Lodash-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+<!-- JQuery --> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+<link type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- main css -->
+<link rel="stylesheet" href="./css/style.css">
+<!-- main script -->
+<script type="text/javascript" src="./src/jquery.easeScroll.js"></script>
+<script defer src="./js/main.js"></script>
+
+<script>
+    alert("본 사이트는 상업적 목적이 아닌 개인 포트폴리오의 용도로 만들어졌으며, 개인이 100%로 만든 포트폴리오 입니다.");
+</script>
+	
+</head>
+<body>
+<header>
+    <div class="inner">
+    <ul class="header_left">
+        <li><a href="./login.html">로그인</a></li>
+        <li><a href="./intro.html">콘래드소개</a></li>
+        <li class="search">
+            <input type="text" />
+            <span class="material-icons">search</span>
+        </li>
+    </ul>
+    <a href="index.html" class="logo"><img src="./img/logo.png" alt="logo"></a>
+    <ul class="header_right">
+        <li><a href="#">예약확인</a></li>
+        <li><a href="#">ENG</a></li>
+        <li><a href="#">
+            <!-- <span class="material-icons menu-bar">
+                menu
+                </span> -->
+                <label class="menu-btn">
+                    <input type="checkbox" id="check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+        </a></li>
+    </ul>
+</div>
+</header>
+    <!-- main visual -->
+    <section class="main-slide">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/main_visual1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/main_visual2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="scroll">
+            Scroll Down
+        </div>
+    </section>
+    <!-- contents start -->
+    <section class="main-text-check" data-aos="fade-up">
+    <div class="inner">
+        <div class="main_txt">
+            여기 당신만을 위한 특별한 호텔이 있습니다. <br>
+            이 곳에서 당신은 진정한 나를 만나며 지금까지 경험할 수 없었던 럭셔리하고 빈틈없는 서비스를 받게 됩니다.<br>  
+            콘래드 서울에서 도시가 가진 풍부한 문화에 비로소 눈을 뜨게 될 것입니다. <br>
+            쇼핑과 관광을 통해서, 감각적인 스파와 화려한 요리에 흠뻑 취해서, 또는 도시와 강이 내뿜는 매혹적인 전경을 바라보는 것 만으로도 이 도시가 가진 수 많은 가능성을 느낄 수 있습니다.<br>
+            콘래드 서울은 럭셔리 그 이상의 경험을 선사할 것입니다. 콘래드 서울에서 가장 편안한 럭셔리를 경험해 보세요.
+        </div>
+
+        <div class="main_check">
+            <div class="check_left">
+                <ul>
+                    <li class="check01"><input type="text" name="" value="" class="datepicker inp" placeholder="Check in" readonly="true" />
+                        <!-- <span class="material-icons">expand_more</span> -->
+                    </li>
+                    <li class="check01"><input type="text" name="" value="" class="datepicker inp" placeholder="Check out" readonly="true" />
+                    </li>
+                    <li class="check02">
+                        <select name="Adult" class="inp">
+                        <option value="">Adult</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                    </li>
+                    <li class="check02">
+                        <select name="Child" class="inp">
+                        <option value="">Child</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="check_right">
+                <button class="check--btn btn">CHECK AVAILABILITY</button>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<section class="promotion" data-aos="fade-up">
+    <div class="inner">
+        <h1>PROMOTION & NEWS</h1>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="promotion_left"><img src="./img/event.png" alt=""></div>
+                  <div class="promotion_right">
+                      <h3>콘래드 서울에서 투숙하면서<br /> 
+                        IFC몰 쇼핑 혜택을 누려보세요!</h3>
+                        <p>콘래드 서울에서의 스테이케이션을 더욱 완벽하게 즐기는 법!<br />
+                            체크인 하신 후, 투숙객 룸 키를 소지하시고<br /> 
+                            IFC몰에서 쇼핑 할인 혜택을 즐겨보세요!</p>
+                        <button class="promotion--btn btn">View more</button>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+              <div class="swiper-slide">
+                <div class="promotion_left"><img src="./img/steak.jpg" alt=""></div>
+                  <div class="promotion_right">
+                      <h3>All You Can Meat<br /> 
+                        콘라드에서만 만날수 있는 고품격 뷔페</h3>
+                        <p>매주 수요일 저녁! 미국육류수출협회와 함께하여<br />
+                            더욱 업그레이드된 무제한 고기 뷔페인 "All You Can Meat"을 만나보세요. <br />
+                            에이징 기법을 활용하여 촉촉한 육즙을 간직한 스테이크와<br /> 
+                            미국산 돼지고기 요리가 준비되어 있습니다!<br />
+                            추가로, 완벽히 페어링된 와인도 함께 즐겨보세요. </p>
+                        <button class="promotion--btn btn">View more</button>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="promotion_left"><img src="./img/mango.png" alt=""></div>
+                  <div class="promotion_right">
+                      <h3>여름 한정 빙수 출시<br /> 
+                        37 GRILL & BAR에서 만나보세요</h3>
+                        <p>WELCOME BACK! 더욱 달콤해진 콘래드 서울의<br /> 
+                            망고 빙수와 새롭게 출시된 샤인머스켓 빙수를 만나보세요. <br />
+                            상큼 달큼한 과즙이 한 입 가득 행복함을 선사하는 망고 빙수를 <br />
+                            탁 트인 한강 뷰가 기다리는 37 그릴 앤 바에서 시원하게 즐겨보세요. </p>
+                        <button class="promotion--btn btn">View more</button>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="promotion_left"><img src="./img/sl04.png" alt=""></div>
+                <!-- <div class="promotion_left"><img src="./img/sl04-2.png" alt=""></div> -->
+                  <div class="promotion_right">
+                      <h3>맛있는 스테이케이션<br /> 
+                        STAY & DINE PACKAGE</h3>
+                        <p>STAY & DINE PACKAGE로 여유와 낭만을 즐겨보세요!<br />
+                            한강 전망의 로맨틱한 디너를 계획하는 커플에게도,<br /> 
+                            게으른 아침 간단한 10G의 테이크 아웃 모닝세트로 침대에서 여유로운 아침<br /> 
+                            혹은 아늑한 버티고에서의 여유로운 브런치를 꿈꾸는 당신에게도 완벽한 패키지!<br />
+                            100,000원 레스토랑 크레딧으로 취향에 맞게 낭만적인 디너 데이트 <br />
+                            혹은 여유로운 브런치를 계획해보세요!</p>
+                        <button class="promotion--btn btn">View more</button>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section class="link-box" data-aos="fade-up">
+    <div class="inner">
+        <h1>CONRARD SEOUL</h1>
+        <div class="box-wrap">
+            <div class="box-left">
+                <div class="acco">
+                    <div class="box_txt"><span>accommodations</span>객실안내</div>
+                    <img src="./img/accommodations.jpg" alt="">
+                </div>
+                <div class="restaurant">
+                    <div class="box_txt"><span>restaurant</span>레스토랑</div>
+                    <img src="./img/rest.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="box-right">
+                <div class="wedding">
+                    <div class="box_txt"><span>wedding</span>웨딩</div>
+                    <img src="./img/wedding.jpg" alt="">
+                </div>
+                <div class="right_wrap">
+                <div class="meet">
+                    <div class="box_txt"><span>meeting & conference</span>미팅 & 컨퍼런스</div>
+                    <img src="./img/meet.jpg" alt="">
+                </div>
+                <div class="fitness">
+                    <div class="box_txt"><span>fitness & spa</span>피트니스 & 스파</div>
+                    <img src="./img/fitness.jpg" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="back-to-top"><span class="material-icons" style="font-weight: 900; color: #222;">north</span></div>
+    <div class="inner">
+        <div class="ft_link">
+            <ul>
+                <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                <li><a href="javascript:void(0)">사이트맵</a></li>
+                <li class="ft_color"><a href="javascript:void(0)">채용</a></li>
+            </ul>
+        </div>
+        <div class="ft_txt">
+            서울특별시 영등포구 국제금융로 10 (여의도동) 07326 콘래드 서울 │ Tel. 02.6137.7000  │ Fax. 02.6137.7001 │ 대표 Stuart Mercier(에스아이에프씨호텔디벨로프먼트 유한회사)
+            <br />사업자 등록번호 104-81-94925 │ 통신판매업신고번호 제2012-서울영등포-1328호
+            <br />Copyright © 
+            <!-- 2017 All rights reserved Hilton -->
+        </div>
+    </div>
+</footer>
+
+<!-- site map -->
+
+<div class="site_map">
+    <div class="lines">
+        <span class="line line01"></span>
+        <span class="line line02"></span>
+        <span class="line line03"></span>
+        <span class="line line04"></span>
+        <span class="line line05"></span>
+    </div>
+    <div class="bg_txt">CONRAD SEOUL</div>
+    <div class="sm_wrap">
+        <div class="menu_t">
+            <ul>
+                <li><a href="./intro.html">콘래드 소개</a></li>
+                <li><a href="javascript:void(0)">코노소어 가입</a></li>
+                <li><a href="javascript:void(0)">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="close-btn">
+            <img src="./img/close-btn.png" alt="">
+        </div>
+        <div class="top_menu">
+            <div class="submenu">
+                예약
+                <ul>
+                    <li><a href="javascript:void(0)">객실</a></li>
+                    <li><a href="javascript:void(0)">레스토랑</a></li>
+                </ul>
+            </div>
+            <div class="submenu">
+                객실안내
+                <ul>
+                    <li><a href="javascript:void(0)">디럭스</a></li>
+                    <li><a href="javascript:void(0)">프리미엄</a></li>
+                    <li><a href="javascript:void(0)">퀸 코너 프리미엄</a></li>
+                    <li><a href="javascript:void(0)">이그제큐티브</a></li>
+                    <li><a href="javascript:void(0)">그랜드 킹 코너 스위트</a></li>
+                    <li><a href="javascript:void(0)">그랜드 킹 이그제큐티브 스위트</a></li>
+                    <li><a href="javascript:void(0)">콘래드 스위트</a></li>
+                    <li><a href="javascript:void(0)">팬트하우스</a></li>
+                </ul>
+            </div>
+            <div class="submenu">레스토랑</div>
+            <div class="submenu">웨딩</div>
+        </div>
+        <div class="bottom_menu">
+            <div class="submenu">미팅 & 컨퍼런스</div>
+            <div class="submenu">피트니스 & 스파
+                <ul>
+                    <li><a href="javascript:void(0)">수영장</a></li>
+                    <li><a href="javascript:void(0)">스파</a></li>
+                </ul>
+            </div>
+            <div class="submenu">프로모션 & 뉴스
+                <ul>
+                    <li><a href="javascript:void(0)">객실</a></li>
+                    <li><a href="javascript:void(0)">식음료</a></li>
+                    <li><a href="javascript:void(0)">뉴스</a></li>
+                    <li><a href="javascript:void(0)">펫</a></li>
+                </ul>
+            </div>
+            <div class="submenu">갤러리</div>
+        </div>
+    </div>
+</div>
+<!-- aos효과 -->
+<script>
+    AOS.init({
+     duration: 600,
+     delay: 100,
+   });
+</script>
+</body>
+</html>

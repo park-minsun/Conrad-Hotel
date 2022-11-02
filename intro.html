@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘래드 서울</title>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">    
+
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+<!-- scroll -->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<!-- google font & icon -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!--GSAP & ScrollToPlugin-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+<!--Swiper-->
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+<!--ScrollMagic-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<!--Lodash-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+<!-- JQuery --> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+<link type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- main css -->
+<link rel="stylesheet" href="./css/style.css">
+<!-- main script -->
+<script type="text/javascript" src="./src/jquery.easeScroll.js"></script>
+<script defer src="./js/main.js"></script>
+
+<style>
+    header{background-color: #fff; box-shadow: 5px 5px 20px #f1f1f1; position: relative;}
+    header a{color: #222;}
+    .header_right label span {background-color: #222;}
+    .search{background-color: #fff; border: 1px solid #ddd}
+    .search input{color: #222;}
+    .search span{color: #9c825e;}
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+        <ul class="header_left">
+            <li><a href="./login.html">로그인</a></li>
+            <li><a href="./intro.html">콘래드소개</a></li>
+            <li class="search">
+                <input type="text" />
+                <span class="material-icons">search</span>
+            </li>
+        </ul>
+        <a href="index.html" class="logo"><img src="./img/logo2.png" alt="logo"></a>
+        <ul class="header_right">
+            <li><a href="#">예약확인</a></li>
+            <li><a href="#">ENG</a></li>
+            <li><a href="#">
+                <!-- <span class="material-icons menu-bar">
+                    menu
+                    </span> -->
+                    <label class="menu-btn">
+                        <input type="checkbox" id="check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+            </a></li>
+        </ul>
+    </div>
+    </header>
+
+    <div class="intro_wrap">
+        <div class="int_top">
+        <div class="int_histoy">
+            <p>Home</p>
+            <span></span>   
+            <p>콘래드 소개</p>         
+        </div>
+        <h3>콘래드 소개</h3>
+    </div>
+    <div class="int_con" data-aos="fade-up">
+        <div class="int_about">
+            <div class="about_img"><img src="./img/about.png" alt="콘래드 서울에 오신 것을 환영합니다."></div>
+            <div class="about_txt">
+                <span class="about_en">ABOUT US</span>
+                <h5>콘래드 서울에 오신 것을 환영합니다.</h5>
+                <p>세계적 명성의 콘래드와 아시아에서 가장 역동적이며 매력적인 도시가 결합한다면 과연 어떤 모습일까요?<br/><br/>
+
+                    세계적인 여행지 콘데나스트 트레블러의 ‘베스트 뉴 호텔’ 중 하나로 선정된 콘래드 서울은 세련된 서비스를 통해 새로운 차원의 럭셔리 경험을 선사합니다. 콘래드 서울은 기대 그 이상의 랜드마크가 될 것을 약속 드리며 차별화된 럭셔리 호텔만의 경험을 제공합니다. 화려하고 넓은 객실은 창 밖 전경과 하나가 됩니다. 모든 객실 마다 차세대 IT 플랫폼 기술을 적용해 엔터테인먼트, 인터넷, 컴퓨터, 게임을 즐기실 수 있습니다. 또한 다양한 다이닝 옵션이 마련되어 있습니다. 로맨틱한 분위기로 당신의 웨딩을 아름답게 수 놓을 연회장이 있습니다. 최신의 시설을 갖춘 스파와 헬스 클럽으로 콘래드 서울은 기대 이상의 만족을 선사합니다.
+                    전혀 새로운 럭셔리함과 세련미, 최고의 서비스를 경험해 보십시오. <br/><br/>
+                    
+                    콘래드 서울에 오신 것을 환영합니다.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="lux_bg">
+    <div class="int_lux" data-aos="fade-up">
+        <div class="lux_txt">
+            <span class="luxury_en">LUXURY</span>
+            <h5>당신이 중심이 되는 럭셔리</h5>
+            <p>여기 당신만큼이나 특별한 호텔이 있습니다. <br/><br/> 
+                이 곳에서 당신은 진정한 나를 만나며 지금까지 경험할 수 없었던 럭셔리하고 빈틈없는 서비스를 받습니다. 콘래드 서울에서 도시가 가진 풍부한 문화에 비로소 눈을 뜨게 됩니다. 쇼핑과 관광을 통해서, 감각적인 스파와 화려한 요리에 흠뻑 취해서, 또는 도시와 강이 내뿜는 매혹적인 전경을 바라보는 것 만으로도 이 도시가 가진 수 많은 가능성을 느낄 수 있습니다.
+                콘래드 서울은 바로 그런 곳입니다. 서울에서도 가장 최신의 스타일리쉬한 럭셔리 호텔 콘래드 서울은 자연스런 분위기 속에서 우아함과 편안함 모두를 선사합니다. 콘래드 호텔은 아시아와 유럽 및 미국을 비롯해 전세계 20여 개가 넘는 호텔을 보유한 글로벌 브랜드로 다른 어떤 호텔들과도 차별됩니다. 콘래드 호텔은 럭셔리 그 이상의 경험을 선사해 드릴 것입니다.
+                <br/><br/>콘래드 호텔에서 당신을 당신답게 하는 럭셔리를 경험해 보십시오.</p>
+        </div>
+        <div class="lux_img"><img src="./img/luxury.png" alt="당신이 중심이 되는 럭셔리"></div>
+    </div>
+</div>
+
+<div class="intro_location" data-aos="fade-up">
+    <h4>LOCATION</h4>
+    <div class="loc_txt">
+        <div class="subway tran">
+            <h5>지하철</h5>
+            <p>5호선, 9호선 여의도역 3번 출구<br/> 
+                지하철 출구 쪽 무빙 워크를 따라 직진 → IFC몰 입구로 진입 → <br/> 
+                무인양품(MUJI) 앞의 에스컬레이터를 타고 L1으로 이동 →<br/>  
+                가든 준오와 세포라 사이의 콘래드 서울의 입구를 발견할 수 있습니다.
+            </p>
+        </div>
+        <div class="bus tran">
+            <h5>버스</h5>
+            <p>여의도환승센터, 한국거래소(구증권선물거래소),
+                여의도역,MBC 하차
+            </p>
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.2611871345725!2d126.92436551558762!3d37.52533993424356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f3bedaef86d%3A0x870e91c402860ad2!2z7L2Y656Y65OcIOyEnOyauA!5e0!3m2!1sko!2skr!4v1661154128058!5m2!1sko!2skr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="loc_box">
+        <p>
+            서울시 영등포구 국제금융로 10, 서울국제금융센터, 콘래드 서울<br/>
+            대표번호 : 02-6137-7000<br/>
+            팩스번호 : 02-6137-7001
+        </p>
+    </div>
+</div>
+    <footer>
+        <div class="back-to-top"><span class="material-icons" style="font-weight: 900; color: #222;">north</span></div>
+        <div class="inner">
+            <div class="ft_link">
+                <ul>
+                    <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                    <li><a href="javascript:void(0)">사이트맵</a></li>
+                    <li class="ft_color"><a href="javascript:void(0)">채용</a></li>
+                </ul>
+            </div>
+            <div class="ft_txt">
+                서울특별시 영등포구 국제금융로 10 (여의도동) 07326 콘래드 서울 │ Tel. 02.6137.7000  │ Fax. 02.6137.7001 │ 대표 Stuart Mercier(에스아이에프씨호텔디벨로프먼트 유한회사)
+                <br />사업자 등록번호 104-81-94925 │ 통신판매업신고번호 제2012-서울영등포-1328호
+                <br />Copyright ©
+                 <!-- 2017 All rights reserved Hilton -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- site map -->
+
+<div class="site_map">
+    <div class="lines">
+        <span class="line line01"></span>
+        <span class="line line02"></span>
+        <span class="line line03"></span>
+        <span class="line line04"></span>
+        <span class="line line05"></span>
+    </div>
+    <div class="bg_txt">CONRAD SEOUL</div>
+    <div class="sm_wrap">
+        <div class="menu_t">
+            <ul>
+                <li><a href="./intro.html">콘래드 소개</a></li>
+                <li><a href="javascript:void(0)">코노소어 가입</a></li>
+                <li><a href="javascript:void(0)">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="close-btn">
+            <img src="./img/close-btn.png" alt="">
+        </div>
+        <div class="top_menu">
+            <div class="submenu">
+                예약
+                <ul>
+                    <li><a href="javascript:void(0)">객실</a></li>
+                    <li><a href="javascript:void(0)">레스토랑</a></li>
+                </ul>
+            </div>
+            <div class="submenu">
+                객실안내
+                <ul>
+                    <li><a href="javascript:void(0)">디럭스</a></li>
+                    <li><a href="javascript:void(0)">프리미엄</a></li>
+                    <li><a href="javascript:void(0)">퀸 코너 프리미엄</a></li>
+                    <li><a href="javascript:void(0)">이그제큐티브</a></li>
+                    <li><a href="javascript:void(0)">그랜드 킹 코너 스위트</a></li>
+                    <li><a href="javascript:void(0)">그랜드 킹 이그제큐티브 스위트</a></li>
+                    <li><a href="javascript:void(0)">콘래드 스위트</a></li>
+                    <li><a href="javascript:void(0)">팬트하우스</a></li>
+                </ul>
+            </div>
+            <div class="submenu">레스토랑</div>
+            <div class="submenu">웨딩</div>
+        </div>
+        <div class="bottom_menu">
+            <div class="submenu">미팅 & 컨퍼런스</div>
+            <div class="submenu">피트니스 & 스파
+                <ul>
+                    <li><a href="javascript:void(0)">수영장</a></li>
+                    <li><a href="javascript:void(0)">스파</a></li>
+                </ul>
+            </div>
+            <div class="submenu">프로모션 & 뉴스
+                <ul>
+                    <li><a href="javascript:void(0)">객실</a></li>
+                    <li><a href="javascript:void(0)">식음료</a></li>
+                    <li><a href="javascript:void(0)">뉴스</a></li>
+                    <li><a href="javascript:void(0)">펫</a></li>
+                </ul>
+            </div>
+            <div class="submenu">갤러리</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    AOS.init({
+        duration: 600,
+        delay: 100,
+    });
+</script>
+
+</body>
+</html>
